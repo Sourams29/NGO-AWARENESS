@@ -4,7 +4,7 @@ A responsive NGO awareness platform designed to promote social impact initiative
 
 ## 🌐 Live Demo
 
-https://inamigos-xi.vercel.app
+https://whimsical-axolotl-96357b.netlify.app/
 
 ---
 
