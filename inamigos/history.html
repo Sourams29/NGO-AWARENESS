@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Applications History — InAmigos Foundation</title>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="{css,js,images}/banner.jpeg"
+         alt="InAmigos Banner"
+         class="navbar-banner">
+</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="volunteer.html">Volunteer</a></li>
+    <li><a href="history.html">Applications</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="volunteer.html" class="nav-cta">Join Us</a></li>
+  </ul>
+  <button class="hamburger"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="page-hero" style="background:linear-gradient(135deg,#1565c0 0%,#0f4d2e 100%);">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index.html">Home</a> <i class="fas fa-chevron-right" style="font-size:0.7rem"></i> <span>Applications History</span></div>
+    <h1>Applications Dashboard</h1>
+    <p>View, search, and manage all volunteer applications submitted to InAmigos Foundation.</p>
+  </div>
+</div>
+
+<section class="history-section">
+  <div class="section-inner">
+
+    <!-- MINI STATS -->
+    <div class="stats-row">
+      <div class="mini-stat reveal">
+        <div class="mini-stat-icon green"><i class="fas fa-users"></i></div>
+        <div><span class="num" id="totalCount">0</span><span class="lbl">Total Applications</span></div>
+      </div>
+      <div class="mini-stat reveal">
+        <div class="mini-stat-icon blue"><i class="fas fa-calendar-check"></i></div>
+        <div><span class="num" id="todayCount">0</span><span class="lbl">Applied Today</span></div>
+      </div>
+      <div class="mini-stat reveal">
+        <div class="mini-stat-icon orange"><i class="fas fa-map-marker-alt"></i></div>
+        <div><span class="num" id="cityCount">0</span><span class="lbl">Cities Represented</span></div>
+      </div>
+      <div class="mini-stat reveal">
+        <div class="mini-stat-icon purple"><i class="fas fa-check-circle"></i></div>
+        <div><span class="num">Active</span><span class="lbl">Status</span></div>
+      </div>
+    </div>
+
+    <!-- TABLE HEADER -->
+    <div class="dashboard-header reveal">
+      <div>
+        <div class="section-tag">All Applications</div>
+        <h2 class="section-title" style="font-size:1.6rem;margin-bottom:0">Volunteer Applications</h2>
+      </div>
+      <div class="dashboard-search">
+        <div class="search-input-wrap">
+          <i class="fas fa-search"></i>
+          <input type="text" id="searchInput" placeholder="Search by name, email, city..." />
+        </div>
+        <select class="filter-select" id="filterSelect">
+          <option value="">All Skills</option>
+          <option>Teaching / Education</option>
+          <option>Social Media / Marketing</option>
+          <option>Photography / Videography</option>
+          <option>Event Management</option>
+          <option>Graphic Design</option>
+          <option>Medical / Healthcare</option>
+          <option>Technology / IT</option>
+          <option>Animal Care</option>
+          <option>Fundraising</option>
+          <option>Environmental Science</option>
+          <option>Other</option>
+        </select>
+        <a href="volunteer.html" class="btn btn-green btn-sm"><i class="fas fa-plus"></i> New Application</a>
+      </div>
+    </div>
+
+    <!-- TABLE -->
+    <div class="table-wrapper reveal" id="tableWrapper">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Applicant</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Location</th>
+            <th>Skills</th>
+            <th>Applied On</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="historyTbody"></tbody>
+      </table>
+    </div>
+
+    <!-- EMPTY STATE -->
+    <div class="empty-state" id="emptyState" style="display:none">
+      <i class="fas fa-inbox"></i>
+      <h3 style="font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--dark);margin-bottom:0.5rem">No Applications Yet</h3>
+      <p>Volunteer applications submitted through the registration form will appear here.</p>
+      <a href="volunteer.html" class="btn btn-green" style="margin-top:1.2rem"><i class="fas fa-plus"></i> Submit First Application</a>
+    </div>
+
+    <!-- SAMPLE DATA NOTICE -->
+    <div style="margin-top:1.5rem;padding:1rem 1.5rem;background:rgba(21,101,192,0.07);border-radius:var(--radius-sm);border-left:4px solid var(--blue);font-size:0.88rem;color:var(--gray-700)">
+      <i class="fas fa-info-circle" style="color:var(--blue);margin-right:6px"></i>
+      Applications are stored in your browser's local storage. Submit a volunteer form to see data here. Data persists across page reloads on this device.
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand"><a href="index.html" class="nav-logo" style="text-decoration:none;display:flex;align-items:center;gap:10px;margin-bottom:1rem"><div class="nav-logo-icon">IA</div><div class="nav-logo-text" style="color:white">InAmigos Foundation <span>Uniting Minds For Change</span></div></a><p>A registered Section 8 NGO working across India for education, environment, animal welfare, and social upliftment since 2020.</p><div class="certifications"><span class="cert-badge">Section 8</span><span class="cert-badge">80G</span><span class="cert-badge">12A</span><span class="cert-badge">CSR-1</span><span class="cert-badge">NITI Aayog</span></div><div class="footer-socials" style="margin-top:1.2rem"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-twitter"></i></a></div></div>
+    <div class="footer-col"><h5>Quick Links</h5><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="projects.html">Projects</a></li><li><a href="volunteer.html">Volunteer</a></li><li><a href="history.html">Applications</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-col"><h5>Our Projects</h5><ul><li><a href="projects.html">#ProjectSEVA</a></li><li><a href="projects.html">#ProjectBACHPANSHALA</a></li><li><a href="projects.html">#ProjectJEEV</a></li><li><a href="projects.html">#ProjectUDAAN</a></li><li><a href="projects.html">#ProjectPRAKRITI</a></li><li><a href="projects.html">#ProjectVIKAS</a></li></ul></div>
+    <div class="footer-col footer-contact"><h5>Contact Us</h5><ul><li><i class="fas fa-map-marker-alt"></i><span>InAmigos Foundation, India</span></li><li><i class="fas fa-envelope"></i><a href="mailto:info@inamigos.org">info@inamigos.org</a></li><li><i class="fas fa-phone"></i><a href="tel:+919999999999">+91 99999 99999</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>© 2024 InAmigos Foundation. All rights reserved. Made with <i class="fas fa-heart" style="color:#e53935"></i> for a better world.</span><span><a href="#">Privacy Policy</a> · <a href="#">Terms of Use</a></span></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact Us — InAmigos Foundation</title>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="{css,js,images}/banner.jpeg"
+         alt="InAmigos Banner"
+         class="navbar-banner">
+</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="volunteer.html">Volunteer</a></li>
+    <li><a href="history.html">Applications</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="volunteer.html" class="nav-cta">Join Us</a></li>
+  </ul>
+  <button class="hamburger"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="page-hero" style="background:linear-gradient(135deg,#0d1b2a 0%,#1a7a4a 100%);">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index.html">Home</a> <i class="fas fa-chevron-right" style="font-size:0.7rem"></i> <span>Contact</span></div>
+    <h1>Get in Touch</h1>
+    <p>Have a question, want to partner, or need more information? We'd love to hear from you.</p>
+  </div>
+</div>
+
+<section>
+  <div class="section-inner">
+    <div class="contact-grid">
+
+      <!-- LEFT INFO -->
+      <div class="reveal">
+        <div class="section-tag">Contact Information</div>
+        <h2 class="section-title">We're <span class="accent">Here for You</span></h2>
+        <p style="margin-bottom:2rem;color:var(--gray-500)">Reach out to us for volunteering, partnerships, CSR collaborations, internships, or any other queries. Our team responds within 24 hours.</p>
+
+        <div class="contact-info-cards">
+          <div class="contact-info-card">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h5>Our Address</h5>
+              <p>InAmigos Foundation, India<br/>Pan-India Operations — 25+ Cities</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h5>Email Us</h5>
+              <a href="mailto:info@inamigos.org">info@inamigos.org</a><br/>
+              <a href="mailto:volunteer@inamigos.org">volunteer@inamigos.org</a>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <h5>Call Us</h5>
+              <a href="tel:+919999999999">+91 99999 99999</a><br/>
+              <p style="font-size:0.82rem;margin-top:0.2rem">Mon – Sat, 10 AM – 6 PM IST</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-icon"><i class="fas fa-globe"></i></div>
+            <div>
+              <h5>Website</h5>
+              <a href="#">www.inamigos.org</a>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h5 style="font-weight:700;color:var(--dark);margin-bottom:1rem">Follow Us on Social Media</h5>
+          <div class="contact-socials">
+            <a href="#" class="contact-social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="contact-social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="contact-social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="contact-social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="contact-social-link" title="Twitter/X"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="contact-social-link" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT FORM -->
+      <div class="contact-form-wrapper reveal">
+        <div class="section-tag">Send a Message</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:900;color:var(--dark);margin-bottom:1.5rem">Write to Us</h3>
+        <form id="contactForm">
+          <div class="form-grid" style="grid-template-columns:1fr 1fr">
+            <div class="form-group">
+              <label for="cName">Your Name</label>
+              <input type="text" id="cName" placeholder="Full name" required />
+            </div>
+            <div class="form-group">
+              <label for="cEmail">Email Address</label>
+              <input type="email" id="cEmail" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="cPhone">Phone Number</label>
+              <input type="tel" id="cPhone" placeholder="+91 XXXXX XXXXX" />
+            </div>
+            <div class="form-group">
+              <label for="cSubject">Subject</label>
+              <select id="cSubject">
+                <option>General Inquiry</option>
+                <option>Volunteering</option>
+                <option>Internship / UDAAN</option>
+                <option>CSR Partnership</option>
+                <option>Donation / Fundraising</option>
+                <option>Media / Press</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group" style="grid-column:span 2">
+              <label for="cMessage">Your Message</label>
+              <textarea id="cMessage" placeholder="Tell us how we can help, or how you'd like to collaborate..." style="min-height:140px" required></textarea>
+            </div>
+          </div>
+          <div style="margin-top:1.5rem">
+            <button type="submit" class="btn btn-primary submit-btn" style="width:100%;justify-content:center">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MAP -->
+<div class="map-section">
+  <div class="section-inner">
+    <div class="section-header center reveal" style="margin-bottom:1.5rem">
+      <div class="section-tag">Find Us</div>
+      <h2 class="section-title">We Operate <span class="accent">Across India</span></h2>
+    </div>
+    <div class="map-frame reveal">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.3025888!2d78.4866!3d17.3850!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana%2C%20India!5e0!3m2!1sen!2sin!4v1700000000000"
+        allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</div>
+
+<!-- CTA MINI -->
+<section class="cta-section" style="padding:3.5rem 2rem">
+  <div class="section-inner">
+    <h2 class="section-title" style="color:white">Join the <span style="color:var(--dark)">InAmigos</span> Family</h2>
+    <p>Start your journey as a volunteer, intern, or partner today.</p>
+    <div class="cta-btns">
+      <a href="volunteer.html" class="btn btn-white"><i class="fas fa-hands-helping"></i> Volunteer Now</a>
+      <a href="projects.html" class="btn btn-outline-white"><i class="fas fa-compass"></i> Explore Projects</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand"><a href="index.html" class="nav-logo" style="text-decoration:none;display:flex;align-items:center;gap:10px;margin-bottom:1rem"><div class="nav-logo-icon">IA</div><div class="nav-logo-text" style="color:white">InAmigos Foundation <span>Uniting Minds For Change</span></div></a><p>A registered Section 8 NGO working across India for education, environment, animal welfare, and social upliftment since 2020.</p><div class="certifications"><span class="cert-badge">Section 8</span><span class="cert-badge">80G</span><span class="cert-badge">12A</span><span class="cert-badge">CSR-1</span><span class="cert-badge">NITI Aayog</span></div><div class="footer-socials" style="margin-top:1.2rem"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-twitter"></i></a></div></div>
+    <div class="footer-col"><h5>Quick Links</h5><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="projects.html">Projects</a></li><li><a href="volunteer.html">Volunteer</a></li><li><a href="history.html">Applications</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-col"><h5>Our Projects</h5><ul><li><a href="projects.html">#ProjectSEVA</a></li><li><a href="projects.html">#ProjectBACHPANSHALA</a></li><li><a href="projects.html">#ProjectJEEV</a></li><li><a href="projects.html">#ProjectUDAAN</a></li><li><a href="projects.html">#ProjectPRAKRITI</a></li><li><a href="projects.html">#ProjectVIKAS</a></li></ul></div>
+    <div class="footer-col footer-contact"><h5>Contact Us</h5><ul><li><i class="fas fa-map-marker-alt"></i><span>InAmigos Foundation, India</span></li><li><i class="fas fa-envelope"></i><a href="mailto:info@inamigos.org">info@inamigos.org</a></li><li><i class="fas fa-phone"></i><a href="tel:+919999999999">+91 99999 99999</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>© 2024 InAmigos Foundation. All rights reserved. Made with <i class="fas fa-heart" style="color:#e53935"></i> for a better world.</span><span><a href="#">Privacy Policy</a> · <a href="#">Terms of Use</a></span></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

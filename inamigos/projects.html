@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Projects — InAmigos Foundation</title>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="{css,js,images}/banner.jpeg"
+         alt="InAmigos Banner"
+         class="navbar-banner">
+</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="volunteer.html">Volunteer</a></li>
+    <li><a href="history.html">Applications</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="volunteer.html" class="nav-cta">Join Us</a></li>
+  </ul>
+  <button class="hamburger"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="page-hero" style="background-image:none;background:linear-gradient(135deg,#0f4d2e 0%,#1565c0 100%);">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index.html">Home</a> <i class="fas fa-chevron-right" style="font-size:0.7rem"></i> <span>Projects</span></div>
+    <h1>Our Projects</h1>
+    <p>Six transformative initiatives creating real, measurable impact across India. #InAmigos</p>
+  </div>
+</div>
+
+<!-- IMPACT BAR -->
+<div class="impact-section">
+  <div class="section-inner" style="text-align:center;margin-bottom:2.5rem">
+    <h2 class="section-title" style="color:white;">Our Collective <span style="color:var(--orange-light)">Impact</span></h2>
+  </div>
+  <div class="impact-stats">
+    <div class="impact-stat reveal"><span class="num" data-target="50000" data-suffix="+">0</span><div class="lbl">Beneficiaries Reached</div></div>
+    <div class="impact-stat reveal"><span class="num" data-target="20000" data-suffix="+">0</span><div class="lbl">Trees Planted</div></div>
+    <div class="impact-stat reveal"><span class="num" data-target="30000" data-suffix="+">0</span><div class="lbl">Interns Trained</div></div>
+    <div class="impact-stat reveal"><span class="num" data-target="25" data-suffix="+">0</span><div class="lbl">Cities Active</div></div>
+  </div>
+</div>
+
+<!-- PROJECTS -->
+<section>
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-tag">All Projects</div>
+      <h2 class="section-title">Transforming Lives <span class="accent">One Project at a Time</span></h2>
+    </div>
+    <div class="project-filters reveal">
+      <button class="filter-btn active" data-filter="all">All Projects</button>
+      <button class="filter-btn" data-filter="welfare">Social Welfare</button>
+      <button class="filter-btn" data-filter="education">Education</button>
+      <button class="filter-btn" data-filter="animal">Animal Welfare</button>
+      <button class="filter-btn" data-filter="environment">Environment</button>
+      <button class="filter-btn" data-filter="empowerment">Empowerment</button>
+    </div>
+    <div class="projects-full-grid">
+
+      <!-- SEVA -->
+      <div class="project-full-card reveal" data-category="welfare">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&q=80" alt="Project SEVA" />
+          <span class="hashtag">#ProjectSEVA</span>
+        </div>
+        <div class="card-body">
+          <h3>Project SEVA</h3>
+          <p>Project SEVA is InAmigos Foundation's flagship food distribution and care initiative. We run regular food drives, distribute essentials to underprivileged families, and provide support to the homeless. SEVA operates across 20+ cities and has served over 50,000 meals.</p>
+          <div class="card-meta">
+            <span class="impact"><i class="fas fa-utensils"></i> 50,000+ Meals Served</span>
+            <a href="volunteer.html" class="btn btn-green btn-sm">Volunteer <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- BACHPANSHALA -->
+      <div class="project-full-card reveal" data-category="education">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=80" alt="Project BACHPANSHALA" />
+          <span class="hashtag">#ProjectBACHPANSHALA</span>
+        </div>
+        <div class="card-body">
+          <h3>Project BACHPANSHALA</h3>
+          <p>BACHPANSHALA means "school of childhood." This project provides free education, learning materials, and mentorship to underprivileged children aged 5–15. Our 200+ volunteer educators run weekend sessions in slums, rural areas, and shelter homes.</p>
+          <div class="card-meta">
+            <span class="impact"><i class="fas fa-graduation-cap"></i> 8,000+ Children Educated</span>
+            <a href="volunteer.html" class="btn btn-green btn-sm">Volunteer <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- JEEV -->
+      <div class="project-full-card reveal" data-category="animal">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1415369629372-26f2fe60c467?w=600&q=80" alt="Project JEEV" />
+          <span class="hashtag">#ProjectJEEV</span>
+        </div>
+        <div class="card-body">
+          <h3>Project JEEV</h3>
+          <p>Project JEEV is our animal welfare initiative. We rescue injured and abandoned animals, run regular feeding drives for street dogs and cats, organize veterinary camps, and spread awareness about responsible pet ownership. JEEV stands for "living being."</p>
+          <div class="card-meta">
+            <span class="impact"><i class="fas fa-paw"></i> 5,000+ Animals Helped</span>
+            <a href="volunteer.html" class="btn btn-green btn-sm">Volunteer <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- UDAAN -->
+      <div class="project-full-card reveal" data-category="empowerment">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&q=80" alt="Project UDAAN" />
+          <span class="hashtag">#ProjectUDAAN</span>
+        </div>
+        <div class="card-body">
+          <h3>Project UDAAN</h3>
+          <p>UDAAN means "flight" — and this project is about helping India's youth soar. We provide internship opportunities, skill development workshops, career guidance, and mentorship to young graduates and students from underprivileged backgrounds.</p>
+          <div class="card-meta">
+            <span class="impact"><i class="fas fa-rocket"></i> 15,000+ Interns Placed</span>
+            <a href="volunteer.html" class="btn btn-green btn-sm">Volunteer <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRAKRITI -->
+      <div class="project-full-card reveal" data-category="environment">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=600&q=80" alt="Project PRAKRITI" />
+          <span class="hashtag">#ProjectPRAKRITI</span>
+        </div>
+        <div class="card-body">
+          <h3>Project PRAKRITI</h3>
+          <p>PRAKRITI (meaning "nature") is our environmental conservation initiative. We organize tree plantation drives, clean-up campaigns, plastic-free awareness programs, and environmental education workshops. 20,000+ trees planted and counting!</p>
+          <div class="card-meta">
+            <span class="impact"><i class="fas fa-tree"></i> 20,000+ Trees Planted</span>
+            <a href="volunteer.html" class="btn btn-green btn-sm">Volunteer <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- VIKAS -->
+      <div class="project-full-card reveal" data-category="empowerment">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80" alt="Project VIKAS" />
+          <span class="hashtag">#ProjectVIKAS</span>
+        </div>
+        <div class="card-body">
+          <h3>Project VIKAS</h3>
+          <p>VIKAS means "development." This project focuses on women empowerment — providing vocational training, digital literacy, financial education, and self-defense workshops to women from marginalized communities. VIKAS is building India one woman at a time.</p>
+          <div class="card-meta">
+            <span class="impact"><i class="fas fa-female"></i> 3,000+ Women Empowered</span>
+            <a href="volunteer.html" class="btn btn-green btn-sm">Volunteer <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="section-inner">
+    <div class="section-tag" style="background:rgba(255,255,255,0.2);color:white">Get Involved</div>
+    <h2 class="section-title">Be Part of the <span style="color:var(--dark)">Change</span></h2>
+    <p>Every project needs passionate volunteers. Find your cause, join a project, and start making a difference today.</p>
+    <div class="cta-btns">
+      <a href="volunteer.html" class="btn btn-white"><i class="fas fa-hands-helping"></i> Volunteer Now</a>
+      <a href="contact.html" class="btn btn-outline-white"><i class="fas fa-envelope"></i> Partner With Us</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo" style="text-decoration:none;display:flex;align-items:center;gap:10px;margin-bottom:1rem">
+        <div class="nav-logo-icon">IA</div>
+        <div class="nav-logo-text" style="color:white">InAmigos Foundation <span>Uniting Minds For Change</span></div>
+      </a>
+      <p>A registered Section 8 NGO working across India for education, environment, animal welfare, and social upliftment since 2020.</p>
+      <div class="certifications"><span class="cert-badge">Section 8</span><span class="cert-badge">80G</span><span class="cert-badge">12A</span><span class="cert-badge">CSR-1</span><span class="cert-badge">NITI Aayog</span></div>
+      <div class="footer-socials" style="margin-top:1.2rem"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-twitter"></i></a></div>
+    </div>
+    <div class="footer-col"><h5>Quick Links</h5><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="projects.html">Projects</a></li><li><a href="volunteer.html">Volunteer</a></li><li><a href="history.html">Applications</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-col"><h5>Our Projects</h5><ul><li><a href="projects.html">#ProjectSEVA</a></li><li><a href="projects.html">#ProjectBACHPANSHALA</a></li><li><a href="projects.html">#ProjectJEEV</a></li><li><a href="projects.html">#ProjectUDAAN</a></li><li><a href="projects.html">#ProjectPRAKRITI</a></li><li><a href="projects.html">#ProjectVIKAS</a></li></ul></div>
+    <div class="footer-col footer-contact"><h5>Contact Us</h5><ul><li><i class="fas fa-map-marker-alt"></i><span>InAmigos Foundation, India</span></li><li><i class="fas fa-envelope"></i><a href="mailto:info@inamigos.org">info@inamigos.org</a></li><li><i class="fas fa-phone"></i><a href="tel:+919999999999">+91 99999 99999</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>© 2024 InAmigos Foundation. All rights reserved. Made with <i class="fas fa-heart" style="color:#e53935"></i> for a better world.</span><span><a href="#">Privacy Policy</a> · <a href="#">Terms of Use</a></span></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
