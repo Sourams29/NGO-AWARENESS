@@ -4,7 +4,7 @@ A responsive NGO awareness platform designed to promote social impact initiative
 
 ## 🌐 Live Demo
 
-https://whimsical-axolotl-96357b.netlify.app/
+https://whimsical-axolotl-96357b.netlify.app
 
 ---
 
@@ -13,7 +13,7 @@ https://whimsical-axolotl-96357b.netlify.app/
 - Responsive modern UI
 - NGO mission and awareness sections
 - Volunteer and community engagement information
-- Donation/support sections
+- Donation/support section
 - Clean navigation and user-friendly layout
 - Mobile-friendly design
 
@@ -32,11 +32,11 @@ https://whimsical-axolotl-96357b.netlify.app/
 
 ## 🚀 Deployment
 
-This project is deployed using Vercel.
+This project is deployed using NETLIFY.
 
 Live Website:
 
-https://inamigos-xi.vercel.app
+https://whimsical-axolotl-96357b.netlify.app
 
 ---
 
